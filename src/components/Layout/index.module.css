@@ -1,6 +1,7 @@
 .pageBody {
   flex-grow: 1;
   background-color: rgb(244, 244, 244);
+  max-width: 100vw;
 }
 
 .pageWrapper {
