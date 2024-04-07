@@ -2,17 +2,22 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   margin-top: 50px;
+  max-width: 90vw;
+}
+
+.productContent {
+  max-width: 1000px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .productDetails {
   display: flex;
-  margin: auto;
-  max-width: 1200px;
-  align-items: center;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adjust the shadow properties */
+  max-width: 1000px;
+  margin-bottom: 20px;
 }
 
 .productImage {
@@ -30,10 +35,7 @@
   flex: 2;
 }
 
-.productInfo h2 {
-  margin-bottom: 10px;
-}
-
+.productInfo h2,
 .productInfo p {
   margin-bottom: 10px;
 }
@@ -54,32 +56,28 @@
 .productInfo button:hover {
   background-color: #1e036e;
 }
-.reviewsSection {
-  margin-top: 20px;
-  display: flex;
-  flex-direction: column;
+
+.reviewsSection,
+.reviewCard {
   max-width: 1000px;
-  margin: auto;
+  align-self: flex-start;
 }
 
-.reviewsSection h3 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-}
-
-.reviewsSection ul {
-  list-style: none;
-  padding: 0;
-}
-
-.reviewsSection li {
-  border: 1px solid #ccc;
+.reviewCard {
+  padding: 20px;
+  margin-bottom: 20px;
   border-radius: 8px;
-  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 1000px;
+  max-width: 90vw;
+}
+
+.reviewCard p {
   margin-bottom: 10px;
 }
 
-.ReviewRating {
-  margin: 0;
-  font-weight: bold;
+.contentContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 8rem;
 }

@@ -50,6 +50,7 @@ export default function Product() {
     }
 
     return (
+        <div className={styles.contentContainer}>
         <div className={styles.productContainer}>
             <div className={styles.productDetails}>
                 <div className={styles.productImage}>
@@ -62,20 +63,22 @@ export default function Product() {
                     <button className={styles.addToCartButton} onClick={handleAddToCart}>Add to Cart</button>
                 </div>
             </div>
-            {reviews.length > 0 && (
+            {reviews.length > 0 ? (
                 <div className={styles.reviewsSection}>
                     <h3>Reviews</h3>
-                    <ul>
-                        {reviews.map(review => (
-                            <li key={review.id}>
-                                <p className={styles.ReviewRating}>Rating: {review.rating}</p>
-                                <p>{review.username}</p>
-                                <p>{review.description}</p>
-                            </li>
-                        ))}
-                    </ul>
+                    {reviews.map(review => (
+                        <div key={review.id} className={styles.reviewCard}>
+                            <p className={styles.ReviewRating}>Rating: {review.rating}</p>
+                            <p>{review.username}</p>
+                            <p>{review.description}</p>
+                        </div>
+                    ))}
+                </div>
+            ) : (
+                <div className={styles.noReviewsMessage}>
+                    There are no reviews for this product yet.
                 </div>
             )}
-        </div>
+        </div></div>
     );
 }
