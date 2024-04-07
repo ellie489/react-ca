@@ -1,6 +1,6 @@
 .formContainer {
-  width: 100%;
-  max-width: 400px;
+  width: 400px;
+  max-width: 80vw;
   margin: 0 auto;
   padding: 60px;
   border: 1px solid #fff;
@@ -16,6 +16,7 @@
 .formField label {
   display: block;
   margin-bottom: 5px;
+  max-width: 80vw;
 }
 
 .formField input,
@@ -24,7 +25,8 @@
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  box-sizing: border-box; 
+  box-sizing: border-box;
+  max-width: 80vw;
 }
 
 .error {
