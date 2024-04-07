@@ -23,7 +23,7 @@ const ProductItem = ({ product }) => {
                 <p className={styles.Price}>{product.discountedPrice},- <OnSale product={product} /></p>
             </Link> 
             <div className={styles.ButtonContainer}>
-                    <button className={styles.ViewProductButton}>View Product</button>
+            <Link to={`/product/${product.id}`}><button className={styles.ViewProductButton}>View Product</button></Link> 
                     <button className={styles.AddToCartButton} onClick={handleAddToCart}>Add to Cart</button>
                 </div>
         </div> 
