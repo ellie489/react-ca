@@ -1,12 +1,11 @@
-export default function Header() {
+import Navbar from "../Nav";
+
+const Header = ({ onAddToCart }) => {
     return (
-        <header>
-            <ul>
-                <li>Home</li>
-                <li>Contact</li>
-                <li>About</li>
-                <li>Another thing</li>
-            </ul>
-        </header>
+      <header>
+        <Navbar onAddToCart={onAddToCart} />
+      </header>
     );
-}
+  };
+  
+export default Header;

@@ -1,15 +1,18 @@
+import React from 'react';
 import Footer from "../Footer";
 import Header from "../Header";
+import styles from "./index.module.css";
 
-export default function Layout(props) {
-    const children = props.children;
+const Layout = ({ children }) => {
     return (
-        <>
-                <div>
+        <div className={styles.pageWrapper}>
             <Header />
-            {children}
+            <main className={styles.pageBody}>
+                {children}
+            </main>
             <Footer />
         </div>
-        </>
-    )
-}
+    );
+};
+
+export default Layout;
