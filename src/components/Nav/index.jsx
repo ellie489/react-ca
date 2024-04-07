@@ -11,9 +11,6 @@ function Navbar() {
         <li>
           <Link to="/" >Home</Link>
         </li>
-        <li>
-          <Link to="/Product">Product</Link>
-        </li>
         <li><Link to="/Contact" >Contact Us</Link></li>
       </ul>
       <ShoppingCart />
