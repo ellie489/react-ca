@@ -1,6 +1,5 @@
 .formContainer {
-  width: 400px;
-  max-width: 80vw;
+  max-width: 400px;
   margin: 0 auto;
   padding: 60px;
   border: 1px solid #fff;
@@ -54,6 +53,6 @@
 }
 @media screen and (min-width: 600px) {
   .formContainer {
-    max-width: 80vw;
+    width: 80vw;
   }
 }
