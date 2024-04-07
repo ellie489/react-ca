@@ -1,9 +1,9 @@
 .pageBody {
   flex-grow: 1;
+  background-color: rgb(244, 244, 244);
 }
 
 .pageWrapper {
-  background-color: rgb(244, 244, 244);
   height: 100vh;
   display: flex;
   flex-direction: column;

@@ -1,4 +1,3 @@
-// ShoppingCart.jsx
 import React from 'react';
 import { ReactComponent as CartIcon } from "../../media/CartIcon.svg"
 import { Link } from 'react-router-dom';
@@ -8,9 +7,9 @@ const ShoppingCart = () => {
     const totalQuantity = useCartStore(state => state.totalQuantity);
 
     return (
-      <div>
+      <div className='add-margin-right'>
         <Link to="/cart">
-          <CartIcon />
+          <CartIcon/>
           <span>{totalQuantity}</span>
         </Link>
       </div>

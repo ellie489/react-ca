@@ -13,7 +13,7 @@ function Navbar() {
         </li>
         <li><Link to="/Contact" >Contact Us</Link></li>
       </ul>
-      <ShoppingCart />
+      <ShoppingCart  />
     </nav>
   );
 }

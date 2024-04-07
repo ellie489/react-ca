@@ -10,7 +10,7 @@ const Layout = ({ children }) => {
             <main className={styles.pageBody}>
                 {children}
             </main>
-            <Footer />
+            <Footer className={styles.footer} />
         </div>
     );
 };

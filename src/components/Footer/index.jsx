@@ -1,5 +1,5 @@
 export default function Footer() {
     return (
-        <footer>Copyright 2024</footer>
+        <footer className="centered-text add-padding">Copyright 2024</footer>
     )
 };

@@ -35,6 +35,12 @@ body {
     flex-direction: column;
     align-items: center;
   }
+  .add-padding {
+    padding: 20px;
+  }
+  .add-margin-right {
+    margin-right: 20px;
+  }
 `;
 
 export default GlobalStyle;

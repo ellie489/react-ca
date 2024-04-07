@@ -1,14 +1,18 @@
 .navbar {
-  background-color: #dadada;
+  position: fixed; /* Set the navbar to be fixed */
+  top: 0; /* Position it at the top of the viewport */
+  width: 100%; /* Make it span the entire width of the viewport */
+  background-color: #d4caff;
   padding: 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 1000; /* Ensure it appears above other content */
 }
 
 .navbar ul {
   list-style-type: none;
-  margin: 0;
+  margin: 0.5rem;
   padding: 0;
   display: flex;
 }
@@ -32,4 +36,8 @@
 
 .navbar a.active {
   background-color: rgb(191, 189, 189);
+}
+
+.navElement {
+  margin-right: 200px;
 }
