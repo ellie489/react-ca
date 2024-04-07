@@ -1,15 +1,15 @@
 import React from 'react';
 import styles from "./index.module.css";
 import { Link } from 'react-router-dom';
-import useCartStore from '../../zustand/store'; // Import the useCartStore hook
+import useCartStore from '../../zustand/store';
 import { OnSale } from '../OnSale';
 
 const ProductItem = ({ product }) => {
-    const addToCart = useCartStore(state => state.addItem); // Get the addItem function from useCartStore
+    const addToCart = useCartStore(state => state.addItem); 
 
     const handleAddToCart = () => {
         addToCart(product);
-        console.log('Item added to cart:', product); // Log the added item
+        console.log('Item added to cart:', product); 
     };
   
     return (

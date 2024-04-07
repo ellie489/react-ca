@@ -20,7 +20,7 @@
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   height: 100%;
-  justify-content: space-between; /* Ensure space between content and buttons */
+  justify-content: space-between;
 }
 
 .ButtonContainer {
@@ -32,8 +32,8 @@
   margin: 10px;
 }
 .Image {
-  width: 200px; /* Set fixed width */
-  height: 200px; /* Set fixed height */
+  width: 200px;
+  height: 200px;
   border-radius: 8px;
   object-fit: cover;
 }

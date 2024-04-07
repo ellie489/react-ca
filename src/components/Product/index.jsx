@@ -22,7 +22,7 @@ export default function Product() {
                 const json = await response.json();
 
                 setProduct(json.data);
-                setReviews(json.data.reviews); // Set reviews state
+                setReviews(json.data.reviews); 
             } catch (error) {
                 console.error(error);
                 setIsError(true);
