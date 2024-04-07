@@ -41,6 +41,9 @@ body {
   .add-margin-right {
     margin-right: 20px;
   }
+  .add-margin-top {
+    margin-top: 2rem;
+  }
 `;
 
 export default GlobalStyle;
