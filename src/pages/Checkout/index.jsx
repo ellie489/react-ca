@@ -12,8 +12,8 @@ const CheckoutPage = () => {
 
     return (
         <div>
-            <h1>Thank you! Your order has been placed.</h1>
-            <Link to="/">Back to Home</Link>
+            <h1 className="centered-text">Thank you! Your order has been placed.</h1>
+            <div className='centered-content'><Link to="/"><button className='StyledButton'>Back to Home</button></Link></div>
         </div>
     );
 }
