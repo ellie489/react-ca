@@ -1,0 +1,67 @@
+.CardContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  grid-auto-rows: auto;
+  gap: 20px;
+  justify-content: start;
+  width: 90vw;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.Card {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  box-sizing: border-box;
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: 100%;
+}
+
+.Title {
+  margin: 10px;
+}
+
+.Image {
+  width: 100%;
+  max-width: 100%;
+  height: auto; 
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.Description {
+  margin-top: 10px;
+}
+
+.Price {
+  margin-top: auto;
+  font-weight: bold;
+}
+
+.AddToCartButton {
+  margin-top: auto; 
+  padding: 20px;
+  background-color: #7446e9;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.AddToCartButton:hover {
+  background-color: #1e036e;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
