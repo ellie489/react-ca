@@ -46,6 +46,7 @@
   cursor: pointer;
   transition: background-color 0.3s;
   font-size: 1.2rem;
+  font-weight: bold;
 }
 
 .productInfo button:hover {

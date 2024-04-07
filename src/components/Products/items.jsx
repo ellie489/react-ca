@@ -21,9 +21,11 @@ const ProductItem = ({ product }) => {
                 </div>
                 <p className={styles.Description}>{product.description}</p>
                 <p className={styles.Price}>{product.discountedPrice},- <OnSale product={product} /></p>
-               
             </Link> 
-            <button className={styles.AddToCartButton} onClick={handleAddToCart}>Add to Cart</button>
+            <div className={styles.ButtonContainer}>
+                    <button className={styles.ViewProductButton}>View Product</button>
+                    <button className={styles.AddToCartButton} onClick={handleAddToCart}>Add to Cart</button>
+                </div>
         </div> 
     );
 };

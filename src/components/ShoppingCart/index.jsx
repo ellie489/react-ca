@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import useCartStore from '../../zustand/store';
 
 const ShoppingCart = () => {
-    const totalQuantity = useCartStore(state => state.totalQuantity); // Get the total quantity from the Zustand store
+    const totalQuantity = useCartStore(state => state.totalQuantity);
 
     return (
       <div>

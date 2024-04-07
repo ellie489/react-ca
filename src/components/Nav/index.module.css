@@ -22,6 +22,7 @@
   text-decoration: none;
   padding: 0.5rem 1rem;
   border-radius: 0.25rem;
+  font-weight: bold;
   transition: background-color 0.3s ease;
 }
 

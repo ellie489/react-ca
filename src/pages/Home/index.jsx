@@ -4,7 +4,7 @@ import FetchProducts from '../../components/Products/fetch';
 const HomePage = ({ addToCart }) => {
     return (
         <div>
-            <h1>Home page</h1> 
+            <h1 className="centered-heading">Welcome to the online shop!</h1>
             <FetchProducts addToCart={addToCart} />
         </div>
     );

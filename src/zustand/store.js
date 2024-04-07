@@ -44,7 +44,6 @@ const useCartStore = create((set) => {
   };
 });
 
-// Add effect to save cart items and total quantity to local storage
 useCartStore.subscribe((state) => {
   localStorage.setItem("cartItems", JSON.stringify(state.items));
   localStorage.setItem("totalQuantity", state.totalQuantity.toString());
