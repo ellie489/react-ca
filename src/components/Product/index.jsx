@@ -6,6 +6,7 @@ import { OnSale } from "../OnSale";
 
 export default function Product() {
     const [product, setProduct] = useState(null);
+    const [reviews, setReviews] = useState([]);
     const [isLoading, setIsLoading] = useState(false);
     const [isError, setIsError] = useState(false);
     const { id } = useParams();
@@ -21,6 +22,7 @@ export default function Product() {
                 const json = await response.json();
 
                 setProduct(json.data);
+                setReviews(json.data.reviews); // Set reviews state
             } catch (error) {
                 console.error(error);
                 setIsError(true);
@@ -60,6 +62,20 @@ export default function Product() {
                     <button className={styles.addToCartButton} onClick={handleAddToCart}>Add to Cart</button>
                 </div>
             </div>
+            {reviews.length > 0 && (
+                <div className={styles.reviewsSection}>
+                    <h3>Reviews</h3>
+                    <ul>
+                        {reviews.map(review => (
+                            <li key={review.id}>
+                                <p className={styles.ReviewRating}>Rating: {review.rating}</p>
+                                <p>{review.username}</p>
+                                <p>{review.description}</p>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+            )}
         </div>
     );
 }
