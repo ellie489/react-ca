@@ -4,9 +4,7 @@ import { OnSale } from '../OnSale'
 const url = "https://v2.api.noroff.dev/online-shop/";
 export default function LoadProducts() {
   const [products, setProducts] = useState([]);
-  // State for holding our loading state
   const [isLoading, setIsLoading] = useState(false);
-  // State for holding our error state
   const [isError, setIsError] = useState(false);
   useEffect(() => {
     async function getData() {

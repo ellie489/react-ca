@@ -40,11 +40,11 @@ export default function Product() {
     };
 
     if (isLoading || !product) {
-        return <div>Loading...</div>; // Enhance loading state
+        return <div>Loading...</div>; 
     }
 
     if (isError) {
-        return <div>Error fetching product data</div>; // Enhance error state
+        return <div>Error fetching product data</div>;
     }
 
     return (

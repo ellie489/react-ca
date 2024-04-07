@@ -39,7 +39,7 @@
 .productInfo button {
   padding: 20px 60px;
   margin-top: 20px;
-  background-color: #7446e9;
+  background-color: var(--color-primary);
   color: white;
   border: none;
   border-radius: 8px;
