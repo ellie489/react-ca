@@ -8,10 +8,12 @@
   display: flex;
   align-items: center;
   margin-bottom: 10px;
-  border: 1px solid rgb(163, 163, 163);
   padding: 10px;
+  border: 1px solid rgb(251, 251, 251);
   border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow for card effect */
   width: 500px;
+  background-color: #fff;
 }
 
 .CartItem img {
