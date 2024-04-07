@@ -80,4 +80,19 @@
   display: flex;
   justify-content: center;
   margin-top: 5rem;
+  max-width: 90vw;
+}
+@media (max-width: 600px) {
+  .productContent,
+  .productDetails,
+  .reviewsSection,
+  .reviewCard,
+  .productImage img {
+    max-width: 90vw;
+    flex-direction: column;
+    overflow-x: hidden;
+    justify-content: center;
+    margin: auto;
+    padding: 10px;
+  }
 }

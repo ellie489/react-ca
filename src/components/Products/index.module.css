@@ -93,3 +93,13 @@ a {
   max-width: 90vw;
   margin: auto;
 }
+@media (max-width: 600px) {
+  .CardContainer {
+    max-width: 90vw;
+    flex-direction: column;
+    overflow-x: hidden;
+    justify-content: center;
+    margin: auto;
+    padding: 10px;
+  }
+}
