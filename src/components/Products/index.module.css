@@ -65,3 +65,18 @@ a {
   text-decoration: none;
   color: #000;
 }
+
+.StyledSearchContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.StyledSearchBar {
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  width: 500px;
+  max-width: 90vw;
+  margin: auto;
+}

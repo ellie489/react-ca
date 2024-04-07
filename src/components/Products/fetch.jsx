@@ -50,20 +50,22 @@ function FetchProducts() {
   }
 
   return (
-    <div>
+    <div className={styles.StyledSearchContainer}>
       <input
+        className={styles.StyledSearchBar}
         type="text"
         value={searchText}
         onChange={handleSearch}
         placeholder="Search products"
       />
       <div className={styles.CardContainer}>
-        {filteredProducts.map((product) => (
-          <ProductItem
-            key={product.id}
-            product={product}
-          />
-        ))}
+        {filteredProducts.length === 0 ? (
+          <div>No matching products found</div>
+        ) : (
+          filteredProducts.map((product) => (
+            <ProductItem key={product.id} product={product} />
+          ))
+        )}
       </div>
     </div>
   );
