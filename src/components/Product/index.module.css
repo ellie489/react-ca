@@ -1,11 +1,13 @@
 .productContainer {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   margin-top: 50px;
 }
 
 .productDetails {
   display: flex;
+  margin: auto;
   max-width: 1200px;
   align-items: center;
   padding: 20px;
@@ -51,4 +53,33 @@
 
 .productInfo button:hover {
   background-color: #1e036e;
+}
+.reviewsSection {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.reviewsSection h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.reviewsSection ul {
+  list-style: none;
+  padding: 0;
+}
+
+.reviewsSection li {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.ReviewRating {
+  margin: 0;
+  font-weight: bold;
 }

@@ -64,7 +64,7 @@ const ContactForm = () => {
                             minLength={3}
                         />
                     </div>
-                    <button type="submit">Submit</button>
+                    <button className={styles.submitButton} type="submit">Submit</button>
                 </form>
             )}
         </div>

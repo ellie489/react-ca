@@ -3,7 +3,7 @@ import { createGlobalStyle } from "styled-components";
 const GlobalStyle = createGlobalStyle`
 html {
     --color-primary: #7446e9;
-    --color-secondary: #50ceff;
+    --color-secondary: #a0e1ff;
 }
 body {
    height: 100% 
@@ -11,6 +11,9 @@ body {
 .centered-heading {
     text-align: center;
     font-size: 3rem;
+}
+.centered-text {
+    text-align: center;
 }
 `;
 

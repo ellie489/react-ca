@@ -9,7 +9,6 @@
   margin: 0 auto;
   padding: 20px;
 }
-
 .Card {
   display: flex;
   flex-direction: column;
@@ -21,16 +20,20 @@
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   height: 100%;
+  justify-content: space-between; /* Ensure space between content and buttons */
 }
 
+.ButtonContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+}
 .Title {
   margin: 10px;
 }
-
 .Image {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
+  width: 200px; /* Set fixed width */
+  height: 200px; /* Set fixed height */
   border-radius: 8px;
   object-fit: cover;
 }
@@ -42,12 +45,6 @@
 .Price {
   margin-top: auto;
   font-weight: bold;
-}
-.ButtonContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between; /* Adjust as needed */
-  margin-top: 10px; /* Adjust spacing between buttons */
 }
 
 .AddToCartButton,
@@ -63,8 +60,9 @@
   transition: background-color 0.3s;
   font-size: 1rem;
   font-weight: bold;
+  width: 100%;
+  box-sizing: border-box;
 }
-
 .ViewProductButton {
   background-color: var(--color-secondary);
   color: #141414;
